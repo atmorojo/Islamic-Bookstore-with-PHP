@@ -1,0 +1,13 @@
+.cart {
+	@extend %row;
+	padding: 0 2em;
+	margin-top: 1em;
+}
+
+.list-barang {
+	@extend %zeen-8;
+}
+
+.tujuan {
+	@extend %zeen-4;
+}

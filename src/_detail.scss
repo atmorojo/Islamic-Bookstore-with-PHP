@@ -1,0 +1,46 @@
+.detail {
+	@extend %zeen-9;
+	@extend %row;
+	padding-top: 2em;
+}
+
+.detail-gambar {
+	@extend %zeen-3;
+
+	img {
+		width: 100%;
+	}
+}
+
+.detail-harga {
+	text-align: center;
+	background: $light;
+	color: #222222;
+	padding: .5em 0;
+	width: 100%;
+}
+
+.tombol {
+	@extend .detail-harga;
+	background: $blue-2;
+	color: #333;
+	text-decoration: none;
+	margin-top: 1em;
+	display: block;
+
+	&:hover {
+		background: $blue-3;
+	}
+}
+
+.detail-text {
+	@extend %zeen-9;
+}
+
+.detail-judul {
+	display: inline;
+}
+
+.row-3 {
+	text-align: justify;
+}

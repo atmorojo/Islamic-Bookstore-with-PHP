@@ -1,0 +1,21 @@
+footer {
+	background: $blue-2;
+	color: $light;
+	height: 2em;
+	position: relative;
+	z-index: -1;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+}
+
+.copy {
+	position: relative;
+	left: push(9.5);
+	font-size: small;
+	display: inline-block;
+	padding-left: .8em;
+	top: .2em;
+}

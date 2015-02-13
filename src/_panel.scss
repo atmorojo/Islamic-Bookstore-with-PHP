@@ -1,0 +1,34 @@
+.panel {
+	background: $dark;
+	position: fixed;
+	left: -15.625em; /*left or right and the width of your navigation panel*/
+	width: 15.625em; /*should match the above value*/
+	padding-top: 3em;
+	z-index: 3;
+
+	a {
+		display: inline-block;
+		width: 100%;
+		padding: 1em;
+		color: $light;
+		@include transition(.3s);
+		&:hover {
+			background: $blue-1;
+		}
+	}
+}
+
+.panel-admin, .katalog-side {
+	@extend %zeen-2;
+
+	a {
+		display: inline-block;
+		width: 100%;
+		padding: 5px 1em;
+		text-align: right;
+		@include transition(.3s);
+		&:hover {
+			background: $blue-4;
+		}
+	}
+}

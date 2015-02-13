@@ -1,0 +1,37 @@
+html,body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: $blue-2;
+	
+	&:hover {
+		color: $blue-1;
+	}
+}
+
+.main {
+	min-height: 100%;
+	margin-bottom: -2em;
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		height: 3em;
+	}
+}
+
+.outer {
+	@extend %row;
+	margin-top: 2em;
+}
+
+.main-admin {
+	@extend %zeen-10;
+}
+
+.user-main {
+	@extend %zeen-10;
+}

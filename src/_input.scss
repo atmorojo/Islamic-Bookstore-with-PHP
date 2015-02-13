@@ -1,0 +1,130 @@
+.btn, button {
+	padding: 5px 10px;
+	background: $blue-2;
+	border: none;
+	color: white;
+	@include transition(.3s);
+	&:hover, &:focus {
+		cursor: pointer;
+		background: $blue-3;
+		color: $light;
+	}
+	text-decoration: none;
+}
+
+.btn-red {
+	color: red;
+}
+
+.form {
+	@extend %row;
+}
+
+.label {
+	display: block;
+
+	* {
+		vertical-align: top;
+	}
+
+	textarea {
+		height: 15em;
+	}
+
+	input, .input {
+		width: 79%;
+		background: $light;
+		color: $dark;
+		outline: none;
+	}
+
+	label {
+		width: 20%;
+	}
+}
+
+input, label, .input {
+	display: inline-block;
+	&:focus {
+		outline: none;
+	}
+}
+
+input, .input {
+	padding: 10px;
+	margin-bottom: 1em;
+}
+
+.submit {
+	width: 100%;
+}
+
+.main-admin {
+	.register {
+		@extend %zeen-10;
+		@include push(0);
+
+		.input {
+			padding: 10px;
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.form-login {
+	padding-top: 2em;
+
+	fieldset {
+		@extend %zeen-4;
+		@include push(4);
+	}
+
+	.input, input {
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.register {
+	@extend %zeen-6;
+	@include push(3);
+	padding-top: 2em;
+}
+
+.tujuan {
+	height: 10em;
+	font-family: 'droid-sans', sans;
+}
+
+input, .input {
+	border: 1px solid $light;
+	@include transition(.3s);
+	&:focus {
+		border: 1px solid $blue-4;
+	}
+}
+
+.checkbox {
+	left: 7.5%;
+	position: relative;
+}
+
+[type=checkbox] {
+	display: inline;
+	width: inherit;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+legend {
+	text-align: center;
+}

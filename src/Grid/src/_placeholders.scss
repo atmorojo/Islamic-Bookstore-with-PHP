@@ -1,0 +1,27 @@
+// Placeholders ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%row {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	*zoom: 1;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	& >:last-child {
+		margin-right: 0 !important;
+	}
+}
+
+%col {
+	float: left;
+	display: inline-box;
+	min-height: 1px;
+	position: relative;
+	margin-right: $gutter * 1%;
+	> * {
+		padding: 0 0.5em;
+	}
+}

@@ -1,0 +1,13 @@
+@function getcol($col:$columns, $gut:$gutter) {
+	@return abs(100 - ($col - 1) * $gut) / $col;
+}
+
+@function getwidth($col, $span, $gut:$gutter) {
+	$kolom: getcol($col, $gut);
+	@return (($kolom * $span) + ($gut * ($span - 1))) * 1%;
+}
+
+@function push($span, $col:$columns, $gut:$gutter) {
+	$kolom: getcol($col, $gut);
+	@return ($kolom * $span) + ($gut * $span) * 1%;
+}

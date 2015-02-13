@@ -1,0 +1,57 @@
+.katalog {
+	@extend %row;
+}
+
+.product-wrap {
+	@extend %zeen-10;
+	border-left: 1px solid lightgrey;
+}
+
+.product-grid {
+	@extend %row;
+}
+
+.product-container {
+	text-align: center;
+	padding: 1em;
+	@extend %zeen-3;
+	min-height: 320px;
+
+	&:hover {
+		background: $light;
+	}
+
+	.product-link {
+		display: block;
+		height: 310px;
+	}
+}
+
+.image-container {
+	height: 200px;
+
+	img {
+		height: 100%;
+	}
+}
+
+%ket {
+	font-size: 14px;
+}
+
+.judul {
+	@extend %ket;
+	font-weight: bold;
+
+	a {
+		color: $blue-2;
+	}
+}
+
+.pengarang {
+	@extend %ket;
+}
+
+.harga {
+	@extend %ket;
+}

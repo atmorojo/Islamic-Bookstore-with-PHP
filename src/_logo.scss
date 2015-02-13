@@ -1,0 +1,33 @@
+.logo {
+	display: block;
+	text-align: center;
+	position: relative;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background: $blue-2;
+}
+
+.logotype {
+	font-weight: bold;
+	font-size: 3em;
+	color: $light;
+
+	a { 
+		text-decoration: none;
+	}
+}
+
+.sublogo {
+	font-size: 1em;
+	color: $light;
+}
+
+.logo-admin {
+	@extend .logo;
+	background: $blue-3;
+	color: $light;
+
+	a {
+		color: $light;
+	}
+}

@@ -1,0 +1,11 @@
+@mixin gen() {
+	@for $i from 1 through $columns {
+		%zeen-#{$i} { @include col($i) }
+	}
+}
+
+@include gen();
+
+%row {
+	@include row(1902px);
+}

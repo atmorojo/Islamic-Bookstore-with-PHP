@@ -1,0 +1,14 @@
+// Functions & Mixins ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@mixin col($span, $kolom:$columns) {
+	width: getwidth($kolom, $span);
+	@extend %col;
+}
+
+@mixin row($width: $wrap-width) {
+	max-width: $width;
+	@extend %row;
+}
+
+@mixin push($push) {
+	left: push($push);
+}
